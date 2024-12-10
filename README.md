@@ -4,7 +4,7 @@ Example notebooks for fitting neutrino fluxes and constructing uncertainty bands
 
 `Example - Fit a power-law neutrino flux.ipynb` shows an example for how to fit a power-law neutrino flux at the position of TXS 0506+056. This was used in [M. Karl, P. Padovani, P. Giommi, MNRAS, 526, 1, 661-681, 2023](https://academic.oup.com/mnras/article/526/1/661/7269217). 
 
-`Example - Fit a custom neutrino flux.ipynb` shows an example for how to fit a custom flux, here the peaked spectrum based on p$\gamma$ interaction. This was used in [X. Rodrigues, M. Karl, P. Padovani, et al., A&A, 689, A147 (2024)](https://www.aanda.org/articles/aa/full_html/2024/09/aa50592-24/aa50592-24.html). 
+`Example - Fit a custom neutrino flux.ipynb` shows an example for how to fit a custom flux, here the peaked spectrum based on p $\gamma$ interaction. This was used in [X. Rodrigues, M. Karl, P. Padovani, et al., A&A, 689, A147 (2024)](https://www.aanda.org/articles/aa/full_html/2024/09/aa50592-24/aa50592-24.html). 
 
 `FC_interval_construction_example.ipynb` shows an example for how to construct the [Feldman-Cousins confidence belts](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.57.3873) (both for power-law spectrum and the peaked spectrum). This was used in both works mentioned above. This requires that trials were run beforehand. 
 
