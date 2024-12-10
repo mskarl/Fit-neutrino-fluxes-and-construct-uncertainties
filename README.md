@@ -8,7 +8,17 @@ Example notebooks for fitting neutrino fluxes and constructing uncertainty bands
 
 `FC_interval_construction_example.ipynb` shows an example for how to construct the [Feldman-Cousins confidence belts](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.57.3873) (both for power-law spectrum and the peaked spectrum). This was used in both works mentioned above. This requires that trials were run beforehand. 
 
-For running trials for the Feldman-Cousins (FC) limits, you can use the skripts `run_FC_trials.py` (with a power-law) or `run_FC_trials_epeak.py` (with a peaked spectrum). When running those skripts, the correct paths need to be set in the `.env` file (using the `dotenv` python package). Specifics for which trials to run (which power laws, peaks, flux strengths, path where to save data...) can be parsed. 
+For running trials for the Feldman-Cousins (FC) limits, you can use the skripts `run_FC_trials.py` (with a power-law) or `run_FC_trials_epeak.py` (with a peaked spectrum). When running those skripts, the correct paths need to be set in the `.env` file (using the `dotenv` python package). 
+
+In the current setup, you have to create a file called `.env` with the following content (customize it to fit your dependencies):
+```
+SKYLLH_PATH="/path/to/your/skyllh"
+PUBLIC_DATA_PATH="/path/to/data/ice-cube"
+TRIAL_PATH="/where/to/save/your/FC_trials"
+TABLE_PATH="/where/to/find/your/table/"
+```
+
+Specifics for which trials to run (which power laws, peaks, flux strengths, path where to save data...) can be parsed. 
 
 For example, the following command covers a grid for gamma values between 1 and 3.7 (with 51 steps, the default value in `run_FC_trials.py`) and for each gamma, fluxes with a mean number of neutrino events between 1 and 50 (with 61 steps, the default value in `run_FC_trials.py`). Each gridpoint or flux (combination of gamma and ns value) is simulated `--n_trials` = 500 times with a seed `--seed` for the random number generator of 1. The trials are saved in the given path of `--trial_path`: 
 
